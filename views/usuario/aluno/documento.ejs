@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/stylesheets/jumbotron-narrow.css">
+  <link rel="stylesheet" href="/stylesheets/documento.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="/home">Home</a></li>
+            <li role="presentation"><a href="/login">Sair</a></li>
+            <li role="presentation"><a href="/contato">Contato</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">R Acadêmico</h3>
+      </div>
+      <ul class="nav nav-tabs">
+        <li role="presentation"><a href="/aluno/<%=aluno%>">Perfil</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno%>/horario">Horario</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno%>/diario">Diario</a></li>
+        <li role="presentation" class="active"><a href="/aluno/<%=aluno%>/documento">Documento</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno%>/calendario">Calendário</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno%>/material">Material</a></li>
+      </ul>
+
+      <ul class="list-group down">
+        <li class="list-group-item glyphicon glyphicon-download-alt"><a href="#">  Certificado de conclusão de curso</a></li>
+        <li class="list-group-item glyphicon glyphicon-download-alt"><a href="#">  Rendimento escolar</a></li>
+        <li class="list-group-item glyphicon glyphicon-download-alt"><a href="#">  Comprovamente de matricula</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

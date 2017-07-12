@@ -16,8 +16,8 @@
         <div class="header clearfix">
             <nav>
                 <ul class="nav nav-pills pull-right">
-                    <li role="presentation" class="active"><a href="/home">Home</a></li>
-                    <li role="presentation"><a href="/login">Login</a></li>
+                    <li role="presentation"><a href="/home">Home</a></li>
+                    <li role="presentation"  class="active"><a href="/login">Login</a></li>
                     <li role="presentation"><a href="/contato">Contato</a></li>
                 </ul>
             </nav>
@@ -25,7 +25,7 @@
         </div>
 
 
-        <form class="form-signin">
+        <form class="form-signin" method="post">
             <h2 class="form-signin-heading">Acessar Portal:</h2>
             <div class="form-group">
                 <label for="matricula" class="sr-only">Matricula</label>
@@ -39,7 +39,7 @@
 
             <br>
             <div class="form-group">
-                <select class="form-control" id="acesso" name="acesso" #acesso="ngModel" required>
+                <select class="form-control" id="acesso" name="acesso" required>
                     <option>Aluno</option>
                     <option>Professor</option>
                     <option>Coordenador</option>

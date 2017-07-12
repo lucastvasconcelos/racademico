@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/stylesheets/jumbotron-narrow.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="/home">Home</a></li>
+            <li role="presentation"><a href="/login">Sair</a></li>
+            <li role="presentation"><a href="/contato">Contato</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">R Acadêmico</h3>
+      </div>
+      <ul class="nav nav-tabs">
+        <li role="presentation" ><a href="/secretario/<%=secretario%>">Perfil</a></li>
+        <li role="presentation"><a href="/secretario/<%=secretario%>/matricular">Matricular</a></li>
+        <li role="presentation" class="active"><a href="/secretario/<%=secretario%>/documento">Emitir Documentos</a></li>
+        <li role="presentation"><a href="/secretario/<%=secretario%>/trancar">Trancar cadeira</a></li>
+      </ul>
+      <br>
+      <form>
+        <div class="form-group">
+          <label for="usr">Matricula:</label>
+          <input type="text" class="form-control" id="usr">
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+          <label for="sel1">Documento:</label>
+          <select class="form-control" id="sel1">
+    <option>Documento 1</option>
+    <option>Documento 2</option>
+    <option>Documento 3</option>
+    <option>Documento 4</option>
+  </select>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-default">Download</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
