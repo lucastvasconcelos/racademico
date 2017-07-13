@@ -21,22 +21,22 @@
   <div class="container">
     <div class="row">
       <div class="header clearfix">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation"><a href="/home">Home</a></li>
-                    <li role="presentation"><a href="/login">Sair</a></li>
-                    <li role="presentation"><a href="/contato">Contato</a></li>
-                </ul>
-            </nav>
-            <h3 class="text-muted">R Acadêmico</h3>
-        </div>  
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="/home">Home</a></li>
+            <li role="presentation"><a href="/login">Sair</a></li>
+            <li role="presentation"><a href="/contato">Contato</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">R Acadêmico</h3>
+      </div>
       <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="/aluno/<%=aluno%>">Perfil</a></li>
-        <li role="presentation"><a href="/aluno/<%=aluno%>/horario">Horario</a></li>
-        <li role="presentation"><a href="/aluno/<%=aluno%>/diario">Diario</a></li>        
-        <li role="presentation"><a href="/aluno/<%=aluno%>/documento">Documento</a></li>        
-        <li role="presentation"><a href="/aluno/<%=aluno%>/calendario">Calendário</a></li>        
-        <li role="presentation"><a href="/aluno/<%=aluno%>/material">Material</a></li>
+        <li role="presentation" class="active"><a href="/aluno/<%=aluno.id_aluno%>">Perfil</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno.id_aluno%>/horario">Horario</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno.id_aluno%>/diario">Diario</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno.id_aluno%>/documento">Documento</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno.id_aluno%>/calendario">Calendário</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno.id_aluno%>/material">Material</a></li>
       </ul>
 
       <div class="panel panel-info">
@@ -51,29 +51,44 @@
                   <tr>
                     <td>Matricula:</td>
                     <td>
-                      <%=aluno%>
+                      <%=aluno.id_aluno%>
                     </td>
                   </tr>
                   <tr>
                     <td>Nome:</td>
-                    <td> </td>
-                  </tr>
-                  <tr>
-                    <td>Cargo:</td>
-                    <td> </td>
-                  </tr>
-
-                  <tr>
-
+                    <td><%=aluno.nome%></td>
                     <tr>
-                      <td>Email: </td>
-                      <td><a href="mailto:info@support.com">  </a></td>
+                      <td>Endereço:</td>
+                      <td><%=aluno.endereco%> </td>
+                    </tr>
+                    <tr>
+                      <td>Data de Nascimento:</td>
+                      <td><%=aluno.data_nascimento%> </td>
+                    </tr>
+                    <tr>
+                      <td>Nome do Pai:</td>
+                      <td><%=aluno.nome_pai%> </td>
+                    </tr>
+                    <tr>
+                      <td>Nome da Mãe:</td>
+                      <td><%=aluno.nome_mae%></td>
+                    </tr>
+                    <tr>
+                      <td>RG: </td>
+                      <td><%=aluno.rg%></td>
+                    </tr>
+                    <tr>
+                      <td>CPF: </td>
+                      <td><%=aluno.cpf%></td>
                     </tr>
                     <tr>
                       <td>Telefone:</td>
-                      <td> </td>
+                      <td><%=aluno.cpf%></td>
                     </tr>
-
+                    <tr>
+                      <td>Email: </td>
+                      <td><%=aluno.email%></td>
+                    <tr>
 
                 </tbody>
               </table>
@@ -90,18 +105,14 @@
               <table class="table table-user-information">
                 <tbody>
                   <tr>
-                    <td>Implementar:</td>
+                    <td>Curso:</td>
                     <td> </td>
                   </tr>
                   <tr>
-                    <td>Implementar:</td>
+                    <td>Turno:</td>
                     <td> </td>
                   </tr>
-                  <tr>
-                    <td>Implementar:</td>
-                    <td> </td>
-                  </tr>
-
+                 
                 </tbody>
               </table>
             </div>
