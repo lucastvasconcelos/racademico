@@ -31,10 +31,10 @@
         <h3 class="text-muted">R Acadêmico</h3>
       </div>
       <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="/secretario/<%=secretario%>">Perfil</a></li>
-        <li role="presentation"><a href="/secretario/<%=secretario%>/matricular">Matricular</a></li>
-        <li role="presentation"><a href="/secretario/<%=secretario%>/documento">Emitir Documentos</a></li>
-        <li role="presentation"><a href="/secretario/<%=secretario%>/trancar">Trancar cadeira</a></li>
+        <li role="presentation" class="active"><a href="/secretario/<%=secretario.id_secretario%>">Perfil</a></li>
+        <li role="presentation"><a href="/secretario/<%=secretario.id_secretario%>/matricular">Matricular</a></li>
+        <li role="presentation"><a href="/secretario/<%=secretario.id_secretario%>/documento">Emitir Documentos</a></li>
+        <li role="presentation"><a href="/secretario/<%=secretario.id_secretario%>/trancar">Trancar cadeira</a></li>
       </ul>
       <div class="panel panel-info">
         <div class="panel-heading">
@@ -48,59 +48,32 @@
                   <tr>
                     <td>Matricula:</td>
                     <td>
-                      <%=secretario%>
+                      <%=secretario.id_secretario%>
                     </td>
                   </tr>
                   <tr>
                     <td>Nome:</td>
-                    <td> </td>
+                    <td>
+                      <%=secretario.nome%>
+                    </td>
                   </tr>
                   <tr>
-                    <td>Cargo:</td>
-                    <td> </td>
+                    <td>Endereço:</td>
+                    <td>
+                      <%=secretario.endereco%>
+                    </td>
                   </tr>
 
                   <tr>
 
                     <tr>
-                      <td>Email: </td>
-                      <td><a href="mailto:info@support.com">  </a></td>
+                      <td>Telefone: </td>
+                      <td><%=secretario.telefone%></td>
                     </tr>
-                    <tr>
-                      <td>Telefone:</td>
-                      <td> </td>
-                    </tr>
-
-
+                   
                 </tbody>
               </table>
 
-            </div>
-          </div>
-        </div>
-        <div class="panel-heading">
-          <h3 class="panel-title">Informações Gerais: </h3>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <div class=" col-md-9 col-lg-9 ">
-              <table class="table table-user-information">
-                <tbody>
-                  <tr>
-                    <td>Implementar:</td>
-                    <td> </td>
-                  </tr>
-                  <tr>
-                    <td>Implementar:</td>
-                    <td> </td>
-                  </tr>
-                  <tr>
-                    <td>Implementar:</td>
-                    <td> </td>
-                  </tr>
-
-                </tbody>
-              </table>
             </div>
           </div>
         </div>

@@ -32,29 +32,18 @@
       </div>
       <ul class="nav nav-tabs">
         <%console.log(aluno)%>
-        <li role="presentation" ><a href="/aluno/<%=aluno%>">Perfil</a></li>
-        <li role="presentation"><a href="/aluno/<%=aluno%>/horario">Horario</a></li>
-        <li role="presentation" class="active"><a href="/aluno/<%=aluno%>/diario">Diario</a></li>
-        <li role="presentation"><a href="/aluno/<%=aluno%>/documento">Documento</a></li>
-        <li role="presentation"><a href="/aluno/<%=aluno%>/calendario">Calendário</a></li>
-        <li role="presentation"><a href="/aluno/<%=aluno%>/material">Material</a></li>
+        <li role="presentation" ><a href="/aluno/<%=aluno.matricula%>">Perfil</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno.matricula%>/horario">Horario</a></li>
+        <li role="presentation" class="active"><a href="/aluno/<%=aluno.matricula%>/diario">Diario</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno.matricula%>/documento">Documento</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno.matricula%>/calendario">Calendário</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno.matricula%>/material">Material</a></li>
       </ul>
-      <div class="form-group">
-        <label for="date">Data:</label>
-        <input type="date" class="form-control" id="date" name="date">
-      </div>
+      
       <div class="list-group">
         <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">Engenharia de Software</h4>
-          <p class="list-group-item-text">Trabalho para Casa</p>
-        </a>
-        <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">Programação Orientada a Objetos</h4>
-          <p class="list-group-item-text">Exercicios 254 a 350</p>
-        </a>
-        <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">Calculo 3</h4>
-          <p class="list-group-item-text">Trabalho para Casa</p>
+          <h4 class="list-group-item-heading"><%=nome_disciplina%></h4>
+          <p class="list-group-item-text"><%=conteudo%></p>
         </a>
       </div>
 

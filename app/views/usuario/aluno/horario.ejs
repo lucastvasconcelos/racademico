@@ -32,36 +32,26 @@
       </div>
      <ul class="nav nav-tabs">
        <%console.log(aluno)%>
-        <li role="presentation"><a href="/aluno/<%=aluno%>">Perfil</a></li>
-        <li role="presentation" class="active"><a href="/aluno/<%=aluno%>/horario">Horario</a></li>
-        <li role="presentation"><a href="/aluno/<%=aluno%>/diario">Diario</a></li>        
-        <li role="presentation"><a href="/aluno/<%=aluno%>/documento">Documento</a></li>        
-        <li role="presentation"><a href="/aluno/<%=aluno%>/calendario">Calendário</a></li>        
-        <li role="presentation"><a href="/aluno/<%=aluno%>/material">Material</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno.matricula%>">Perfil</a></li>
+        <li role="presentation" class="active"><a href="/aluno/<%=aluno.matricula%>/horario">Horario</a></li>
+        <li role="presentation"><a href="/aluno/<%=aluno.matricula%>/diario">Diario</a></li>        
+        <li role="presentation"><a href="/aluno/<%=aluno.matricula%>/documento">Documento</a></li>        
+        <li role="presentation"><a href="/aluno/<%=aluno.matricula%>/calendario">Calendário</a></li>        
+        <li role="presentation"><a href="/aluno/<%=aluno.matricula%>/material">Material</a></li>
       </ul>
       <table class="table table-hover">
         <thead>
           <tr>
-            <th>Materia</th>
+            <th>Disciplina</th>
             <th>Horário</th>
             <th>Sala</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Engenharia de Software</td>
-            <td>19:00</td>
-            <td>BC 10</td>
-          </tr>
-          <tr>
-            <td>Calculo 3</td>
-            <td>21:00</td>
-            <td>BD 10</td>
-          </tr>
-          <tr>
-            <td>Geometria Analitica</td>
-            <td>22:00</td>
-            <td>AC 10</td>
+            <td><%=nome_disciplina%></td>
+            <td><%=horario%></td>
+            <td><%=nome_sala%></td>
           </tr>
         </tbody>
       </table>

@@ -31,10 +31,10 @@
         <h3 class="text-muted">R Acadêmico</h3>
       </div>
       <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="/coordenador/<%=coordenador%>">Perfil</a></li>
-        <li role="presentation"><a href="/coordenador/<%=coordenador%>/alocar">Alocar</a></li>
+        <li role="presentation" class="active"><a href="/coordenador/<%=coordenador.id_coordenador%>">Perfil</a></li>
+        <li role="presentation"><a href="/coordenador/<%=coordenador.id_coordenador%>/alocar">Alocar</a></li>
       </ul>
-       <div class="panel panel-info">
+      <div class="panel panel-info">
         <div class="panel-heading">
           <h3 class="panel-title">Informações Pessoais</h3>
         </div>
@@ -46,59 +46,41 @@
                   <tr>
                     <td>Matricula:</td>
                     <td>
-                      <%=coordenador%>
+                      <%=coordenador.id_coordenador%>
                     </td>
                   </tr>
                   <tr>
                     <td>Nome:</td>
-                    <td> </td>
+                    <td>
+                      <%=coordenador.nome%>
+                    </td>
                   </tr>
                   <tr>
-                    <td>Cargo:</td>
-                    <td> </td>
+                    <td>Endereço:</td>
+                    <td>
+                      <%=coordenador.endereco%>
+                    </td>
                   </tr>
 
                   <tr>
 
                     <tr>
-                      <td>Email: </td>
-                      <td><a href="mailto:info@support.com">  </a></td>
+                      <td>titulacao</td>
+                      <td>
+                        <%=coordenador.titulacao%>
+                      </td>
                     </tr>
                     <tr>
                       <td>Telefone:</td>
-                      <td> </td>
+                      <td>
+                        <%=coordenador.telefone%>
+                      </td>
                     </tr>
 
 
                 </tbody>
               </table>
 
-            </div>
-          </div>
-        </div>
-        <div class="panel-heading">
-          <h3 class="panel-title">Informações Gerais: </h3>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <div class=" col-md-9 col-lg-9 ">
-              <table class="table table-user-information">
-                <tbody>
-                  <tr>
-                    <td>Implementar:</td>
-                    <td> </td>
-                  </tr>
-                  <tr>
-                    <td>Implementar:</td>
-                    <td> </td>
-                  </tr>
-                  <tr>
-                    <td>Implementar:</td>
-                    <td> </td>
-                  </tr>
-
-                </tbody>
-              </table>
             </div>
           </div>
         </div>

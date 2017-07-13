@@ -21,21 +21,21 @@
   <div class="container">
     <div class="row">
       <div class="header clearfix">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation"><a href="/home">Home</a></li>
-                    <li role="presentation"><a href="/login">Sair</a></li>
-                    <li role="presentation"><a href="/contato">Contato</a></li>
-                </ul>
-            </nav>
-            <h3 class="text-muted">R Acadêmico</h3>
-        </div>  
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="/home">Home</a></li>
+            <li role="presentation"><a href="/login">Sair</a></li>
+            <li role="presentation"><a href="/contato">Contato</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">R Acadêmico</h3>
+      </div>
       <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="/professor/<%=professor%>">Perfil</a></li>
-        <li role="presentation"><a href="/professor/<%=professor%>/diario">Diario</a></li>        
-        <li role="presentation"><a href="/professor/<%=professor%>/horario">Horario</a></li>        
-        <li role="presentation"><a href="/professor/<%=professor%>/calendario">Calendário</a></li>        
-        <li role="presentation"><a href="/professor/<%=professor%>/material">Enviar Material</a></li>
+        <li role="presentation" class="active"><a href="/professor/<%=professor.id_professor%>">Perfil</a></li>
+        <li role="presentation"><a href="/professor/<%=professor.id_professor%>/diario">Diario</a></li>
+        <li role="presentation"><a href="/professor/<%=professor.id_professor%>/horario">Horario</a></li>
+        <li role="presentation"><a href="/professor/<%=professor.id_professor%>/calendario">Calendário</a></li>
+        <li role="presentation"><a href="/professor/<%=professor.id_professor%>/material">Enviar Material</a></li>
       </ul>
 
       <div class="panel panel-info">
@@ -50,59 +50,42 @@
                   <tr>
                     <td>Matricula:</td>
                     <td>
-                      <%=professor%>
+                      <%=professor.id_professor%>
                     </td>
                   </tr>
                   <tr>
                     <td>Nome:</td>
-                    <td> </td>
+                    <td>
+                      <%=professor.nome%>
+                    </td>
                   </tr>
                   <tr>
-                    <td>Cargo:</td>
-                    <td> </td>
+                    <td>Endereço:</td>
+                    <td>
+                      <%=professor.endereco%>
+                    </td>
                   </tr>
-
+                  <td>titulacao:</td>
+                  <td>
+                    <%=professor.titulacao%>
+                  </td>
                   <tr>
 
                     <tr>
-                      <td>Email: </td>
-                      <td><a href="mailto:info@support.com">  </a></td>
+                      <td>Departamento: </td>
+                      <td>
+                        <%=professor.id_departamento%>
+                      </td>
                     </tr>
                     <tr>
                       <td>Telefone:</td>
-                      <td> </td>
+                      <td><%=professor.telefone%></td>
                     </tr>
 
 
                 </tbody>
               </table>
 
-            </div>
-          </div>
-        </div>
-        <div class="panel-heading">
-          <h3 class="panel-title">Informações Gerais: </h3>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <div class=" col-md-9 col-lg-9 ">
-              <table class="table table-user-information">
-                <tbody>
-                  <tr>
-                    <td>Implementar:</td>
-                    <td> </td>
-                  </tr>
-                  <tr>
-                    <td>Implementar:</td>
-                    <td> </td>
-                  </tr>
-                  <tr>
-                    <td>Implementar:</td>
-                    <td> </td>
-                  </tr>
-
-                </tbody>
-              </table>
             </div>
           </div>
         </div>
