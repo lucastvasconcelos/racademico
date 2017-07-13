@@ -31,31 +31,65 @@
         <h3 class="text-muted">R Acadêmico</h3>
       </div>
       <ul class="nav nav-tabs">
-        <li role="presentation" ><a href="/secretario/<%=secretario%>">Perfil</a></li>
+        <li role="presentation"><a href="/secretario/<%=secretario%>">Perfil</a></li>
         <li role="presentation" class="active"><a href="/secretario/<%=secretario%>/matricular">Matricular</a></li>
         <li role="presentation"><a href="/secretario/<%=secretario%>/documento">Emitir Documentos</a></li>
         <li role="presentation"><a href="/secretario/<%=secretario%>/trancar">Trancar cadeira</a></li>
       </ul>
       <br>
-      <form action="">
+      <form method="post" action="/secretario/<%=secretario%>/matricular">
         <div class="form-group">
-          <label for="usr">Nome:</label>
-          <input type="text" class="form-control" id="usr">
+          <label for="id_aluno">Matricula:</label>
+          <input type="text" class="form-control" id="id_aluno" name="id_aluno">
         </div>
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" class="form-control" id="nome" name="nome">
+        </div>
+        <div class="form-group">
+          <label for="endereco">Endereço:</label>
+          <input type="text" class="form-control" id="endereco" name="endereco">
+        </div>
+        <div class="form-group">
+          <label for="nome_pai">Nome do Pai:</label>
+          <input type="text" class="form-control" id="nome_pai" name="nome_pai">
+        </div>
+        <div class="form-group">
+          <label for="nome_mae">Nome da Mãe:</label>
+          <input type="text" class="form-control" id="nome_mae" name="nome_mae">
+        </div>
+        <div class="form-group">
+          <label for="rg">RG:</label>
+          <input type="text" class="form-control" id="rg" name="rg">
+        </div>
+        <div class="form-group">
+          <label for="cpf">CPF:</label>
+          <input type="text" class="form-control" id="rg" name="cpf">
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="text" name="telefone" class="form-control" id="telefone">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" name="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="data_nascimento">Data de Nascimento:</label>
+          <input type="date" class="form-control" id="data_nascimento" name="data_nascimento">
+        </div>
+        
         <hr>
+        <hr>
+
         <div class="form-group">
           <label for="sel1">Curso:</label>
           <select class="form-control" id="sel1">
-    <option>Curso 1</option>
-    <option>Curso 2</option>
-    <option>Curso 3</option>
-    <option>Curso 4</option>
-  </select>
-        </div>
-        <hr>
-        <div class="form-group">
-          <label for="usr">Data de Nascimento:</label>
-          <input type="date" class="form-control" id="usr">
+            <option>Curso 1</option>
+            <option>Curso 2</option>
+            <option>Curso 3</option>
+            <option>Curso 4</option>
+          </select>
         </div>
         <br>
         <button type="submit" class="btn btn-default">Matricular</button>
